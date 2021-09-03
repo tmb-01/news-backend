@@ -4,21 +4,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import uz.news.newsbackend.entity.HeaderNews;
-import uz.news.newsbackend.service.HeaderNewsService;
+import uz.news.newsbackend.entity.CarouselNews;
+import uz.news.newsbackend.service.CarouselNewsService;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("api/v1/header-news")
-public class HeaderNewsController {
+@RequestMapping("api/v1/carousel-news")
+public class CarouselNewsController {
 
     @Autowired
-    HeaderNewsService headerNewsService;
+    CarouselNewsService carouselNewsService;
 
     @GetMapping
-    public List<HeaderNews> getAll() {
-        return headerNewsService.getNews();
+    public List<CarouselNews> getAll() {
+        return carouselNewsService.getAll();
     }
-
 }

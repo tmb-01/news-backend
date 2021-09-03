@@ -2,6 +2,7 @@ package uz.news.newsbackend.service;
 
 import org.springframework.stereotype.Service;
 import uz.news.newsbackend.entity.WhatsNew;
+import uz.news.newsbackend.payload.WhatsNewDto;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -10,315 +11,272 @@ import java.util.List;
 @Service
 public class WhatsNewService {
 
-    public List<WhatsNew> getAll() {
+    public List<WhatsNewDto> getAll() {
 
+        List<WhatsNewDto> whatsNewDtoList = new ArrayList<>();
         List<WhatsNew> whatsNewList = new ArrayList<>();
 
+//        lifestyle
         whatsNewList.add(
                 new WhatsNew(
                         1L,
-                        "lifestyle",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img1.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
                         2L,
-                        "lifestyle",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img2.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
                         3L,
-                        "lifestyle",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img3.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
                         4L,
-                        "lifestyle",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img4.png"
                 )
         );
 
-        whatsNewList.add(
-                new WhatsNew(
-                        5L,
+
+        whatsNewDtoList.add(
+                new WhatsNewDto(
+                        1L,
                         "lifestyle",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
                         "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "",
+                        "hello world",
+                        whatsNewList
                 )
         );
 
 //        travel
+        whatsNewList = new ArrayList<>();
         whatsNewList.add(
                 new WhatsNew(
-                        6L,
-                        "travel",
+                        1L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_news_details1.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        7L,
-                        "travel",
+                        2L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        ""
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        8L,
-                        "travel",
+                        3L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        ""
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        9L,
-                        "travel",
+                        4L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        ""
                 )
         );
 
-        whatsNewList.add(
-                new WhatsNew(
-                        10L,
+
+        whatsNewDtoList.add(
+                new WhatsNewDto(
+                        2L,
                         "travel",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
                         "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_news_details1.png",
+                        "hello world",
+                        whatsNewList
                 )
         );
 
 //        fashion
+        whatsNewList = new ArrayList<>();
         whatsNewList.add(
                 new WhatsNew(
-                        11L,
-                        "fashion",
+                        1L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img1.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        12L,
-                        "fashion",
+                        2L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img2.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        13L,
-                        "fashion",
+                        3L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img3.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        14L,
-                        "fashion",
+                        4L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img4.png"
                 )
         );
 
-        whatsNewList.add(
-                new WhatsNew(
-                        15L,
+
+        whatsNewDtoList.add(
+                new WhatsNewDto(
+                        3L,
                         "fashion",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
                         "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_news_details1.png",
+                        "hello world",
+                        whatsNewList
                 )
         );
 
 //        sport
+        whatsNewList = new ArrayList<>();
         whatsNewList.add(
                 new WhatsNew(
-                        16L,
-                        "sport",
+                        1L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img1.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        17L,
-                        "sport",
+                        2L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img2.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        18L,
-                        "sport",
+                        3L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img3.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        19L,
-                        "sport",
+                        4L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img4.png"
                 )
         );
 
-        whatsNewList.add(
-                new WhatsNew(
-                        20L,
-                        "sport",
+
+        whatsNewDtoList.add(
+                new WhatsNewDto(
+                        4L,
+                        "travel",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
                         "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_news_details1.png",
+                        "hello world",
+                        whatsNewList
                 )
         );
 
 //        technology
+        whatsNewList = new ArrayList<>();
         whatsNewList.add(
                 new WhatsNew(
-                        21L,
-                        "technology",
+                        1L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img1.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        22L,
-                        "technology",
+                        2L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img2.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        23L,
-                        "technology",
+                        3L,
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_right_img3.png"
                 )
         );
 
         whatsNewList.add(
                 new WhatsNew(
-                        24L,
+                        4L,
+                        "Secretart for Economic Air plane that looks like",
+                        LocalDate.of(2020, 7, 19),
+                        "whats_right_img4.png"
+                )
+        );
+
+
+        whatsNewDtoList.add(
+                new WhatsNewDto(
+                        5L,
                         "technology",
                         "Secretart for Economic Air plane that looks like",
                         LocalDate.of(2020, 7, 19),
                         "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
+                        "whats_news_details1.png",
+                        "hello world",
+                        whatsNewList
                 )
         );
 
-        whatsNewList.add(
-                new WhatsNew(
-                        25L,
-                        "technology",
-                        "Secretart for Economic Air plane that looks like",
-                        LocalDate.of(2020, 7, 19),
-                        "Alice cloe",
-                        "imageLink",
-                        "Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez."
-                )
-        );
 
-        return whatsNewList;
+        return whatsNewDtoList;
 
     }
 }

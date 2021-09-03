@@ -1,11 +1,13 @@
 package uz.news.newsbackend.service;
 
+import org.springframework.stereotype.Service;
 import uz.news.newsbackend.entity.CarouselNews;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class CarouselNewsService {
 
     public List<CarouselNews> getAll() {
@@ -14,7 +16,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         1L,
-                        "imageId",
+                        "weekly2News1.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -23,7 +25,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         2L,
-                        "imageId",
+                        "weekly2News2.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -32,7 +34,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         3L,
-                        "imageId",
+                        "weekly2News3.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -41,7 +43,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         4L,
-                        "imageId",
+                        "weekly2News4.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -50,7 +52,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         5L,
-                        "imageId",
+                        "weekly2News1.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -59,7 +61,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         6L,
-                        "imageId",
+                        "weekly2News2.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )
@@ -68,7 +70,7 @@ public class CarouselNewsService {
         carouselNewsList.add(
                 new CarouselNews(
                         7L,
-                        "imageId",
+                        "weekly2News3.png",
                         "What to Expect From the 2020 Oscar Nomin ations",
                         LocalDate.of(2020, 9, 13)
                 )

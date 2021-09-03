@@ -1,5 +1,6 @@
 package uz.news.newsbackend.service;
 
+import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.stereotype.Service;
 
 import javax.imageio.ImageIO;
@@ -11,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class ImageService {
+public class FileService {
 
     String getImagePath() {
         List<byte[]> imageList = new ArrayList<>();
@@ -19,9 +20,9 @@ public class ImageService {
     }
 
 
-    public byte[] getById(Long imageId) {
+    public byte[] getById(String filename) {
 
-        File file = new File("src/main/resources/assets/img/gallery/about.png");
+        File file = new File("src/main/resources/assets/files/"+filename);
         try {
             return Files.readAllBytes(file.toPath());
         } catch (IOException e) {

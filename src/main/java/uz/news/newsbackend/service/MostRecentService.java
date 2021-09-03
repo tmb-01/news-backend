@@ -19,7 +19,7 @@ public class MostRecentService {
                         "What to Wear: 9+ Cute Work Outfits to Wear This.",
                         "vogue",
                         2,
-                        ""
+                        "most_recent.png"
                 )
         );
 
@@ -30,7 +30,7 @@ public class MostRecentService {
                         "What to Wear: 9+ Cute Work Outfits to Wear This.",
                         "vogue",
                         2,
-                        ""
+                        "most_recent1.png"
                 )
         );
 
@@ -41,7 +41,7 @@ public class MostRecentService {
                         "What to Wear: 9+ Cute Work Outfits to Wear This.",
                         "vogue",
                         2,
-                        ""
+                        "most_recent2.png"
                 )
         );
 

@@ -15,7 +15,7 @@ public class VideoNewsService {
         videoNewsList.add(
                 new VideoNews(
                         1L,
-                        "videoLink",
+                        "news1.mp4",
                         "Spondon News -2019"
                 )
         );
@@ -23,7 +23,7 @@ public class VideoNewsService {
         videoNewsList.add(
                 new VideoNews(
                         2L,
-                        "videoLink",
+                        "news2.mp4",
                         "Spondon News -2019"
                 )
         );
@@ -31,31 +31,7 @@ public class VideoNewsService {
         videoNewsList.add(
                 new VideoNews(
                         3L,
-                        "videoLink",
-                        "Spondon News -2019"
-                )
-        );
-
-        videoNewsList.add(
-                new VideoNews(
-                        4L,
-                        "videoLink",
-                        "Spondon News -2019"
-                )
-        );
-
-        videoNewsList.add(
-                new VideoNews(
-                        5L,
-                        "videoLink",
-                        "Spondon News -2019"
-                )
-        );
-
-        videoNewsList.add(
-                new VideoNews(
-                        6L,
-                        "videoLink",
+                        "news3.mp4",
                         "Spondon News -2019"
                 )
         );
